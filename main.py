@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import filedialog
 from handwr_recog import handwr_recog
 from process_info import process_info
-from GDSY_input import GDSY_input
+from gdsy_input import gdsy_input
 log_img = ''
 API_key = 'API-key.json'
 text_string = ''
@@ -33,7 +33,7 @@ def save():
 
 def input_info():
     log_data = process_info(text_string)
-    GDSY_input(db_file, log_data)
+    gdsy_input(db_file, log_data)
   
 master = Tk()
 master.geometry("450x600")

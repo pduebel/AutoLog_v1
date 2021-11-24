@@ -1,4 +1,4 @@
-def GDSY_input(db_file, log_data):
+def gdsy_input(db_file, log_data):
 
     import pyodbc
     
